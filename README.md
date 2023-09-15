@@ -128,4 +128,14 @@ export class EmoManage {
     }
 }
 ```
+
+## Constantes 
+A constante "emotions" é um objeto que contém diversas emoções e suas respectivas descrições. Ela é usada no projeto EmoManage para permitir aos usuários registrar e descrever suas emoções diárias. Abaixo está uma descrição resumida das principais emoções presentes nesta constante:
+#### emotions.js
+```Javascript
+export const emotions = {
+    ternura: "ternura é proximidade, afeto e compaixão, é um passo para o amor e pode ser despertada por pessoas...",
+    amor:"amor é o oposto de ódio e pode despertar um sorriso gigantesco ou lágrimas, existe dois tipos...",
+}
+```
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=957af1&height=120&section=footer"/>
