@@ -5,10 +5,11 @@
 </div> 
 
 #
-  ### Tecnologia utilizadas
+  ### Tecnologias utilizadas
   ![JavaScript](https://img.shields.io/badge/-JavaScript-0D1117?style=for-the-badge&logo=javascript&labelColor=0D1117)&nbsp;
   ![Jest](https://img.shields.io/badge/-Jest-0D1117?style=for-the-badge&logo=jest&labelColor=0D1117)&nbsp;
 #
+
 O EmoManage é um gerenciador de emoções diárias. Ele oferece funcionalidades para cadastrar, checar e descrever emoções disponíveis. Essa documentação descreve o uso básico da classe e suas funcionalidades.
  
 ### Criando um usuário
@@ -22,11 +23,13 @@ import { User } from "./User.js"
 const daniel = new User("Daniel", "Santos", 21, "20/06/2002");
 const danielRegistration = new EmoManage(daniel); //cadastro realizado com sucesso!
 ```
+
 ###  Inicializando o EmoManage
 Crie uma instância do EmoManage passando o usuário criado como parâmetro:
 ```javascript
 const danielRegistration = new EmoManage(daniel); //cadastro realizado com sucesso!
 ```
+
 ### Registrando Emoções
 Você pode registrar emoções usando o método registerEmotion da seguinte maneira:
 ```javascript
@@ -61,7 +64,9 @@ danielRegistration.descriptionEmotions("insegurança");
     adotamos o mecanismo de defesa e às vezes por insegunça agimos com timidez.'
 } */
 ```
+
 ## Classes utilizadas
+
 ### User
 A classe User é uma parte essencial do projeto EmoManage e é usada para representar informações de usuário, como nome, sobrenome, idade e data de nascimento. Esta classe é responsável por criar instâncias de usuário que podem ser associadas ao gerenciamento de emoções.
 #### User.js
@@ -76,6 +81,7 @@ A classe User é uma parte essencial do projeto EmoManage e é usada para repres
 } 
 
  ```
+
 ### EmoManage 
 A classe EmoManage é o núcleo do projeto e permite aos usuários registrar e gerenciar suas emoções diárias. Suas principais funcionalidades são cadastrar emoções e descrevê-las. Esta classe torna possível acompanhar e refletir sobre as experiências emocionais ao longo do tempo.
 #### EmoManage.js
@@ -129,13 +135,16 @@ export class EmoManage {
 }
 ```
 
-## Constantes 
-A constante "emotions" é um objeto que contém diversas emoções e suas respectivas descrições. Ela é usada no projeto EmoManage para permitir aos usuários registrar e descrever suas emoções diárias. Abaixo está uma descrição resumida das principais emoções presentes nesta constante:
+## Constante
+
+A principal constante do projeto "emotions" é um objeto que contém diversas emoções e suas respectivas descrições. Ela é usada no projeto EmoManage para permitir aos usuários registrar e descrever suas emoções diárias. Abaixo está uma descrição resumida das principais emoções presentes nesta constante:
+
 #### emotions.js
 ```Javascript
 export const emotions = {
     ternura: "ternura é proximidade, afeto e compaixão, é um passo para o amor e pode ser despertada...",
     amor:"amor é o oposto de ódio e pode despertar um sorriso gigantesco ou lágrimas, existe...",
+    ...
 }
 ```
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=957af1&height=120&section=footer"/>
