@@ -134,8 +134,8 @@ A constante "emotions" é um objeto que contém diversas emoções e suas respec
 #### emotions.js
 ```Javascript
 export const emotions = {
-    ternura: "ternura é proximidade, afeto e compaixão, é um passo para o amor e pode ser despertada por pessoas...",
-    amor:"amor é o oposto de ódio e pode despertar um sorriso gigantesco ou lágrimas, existe dois tipos...",
+    ternura: "ternura é proximidade, afeto e compaixão, é um passo para o amor e pode ser despertada...",
+    amor:"amor é o oposto de ódio e pode despertar um sorriso gigantesco ou lágrimas, existe...",
 }
 ```
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=957af1&height=120&section=footer"/>
