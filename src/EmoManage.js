@@ -39,8 +39,8 @@ export class EmoManage {
 
     registerEmotion(emotion, situation, reflection, attitude) {
         const emotionExists = availableEmotions.includes(emotion),
-        newDate = new Date();
-    
+            newDate = new Date();
+
         if (emotionExists) {
             this.card.push({
                 register: {
@@ -53,17 +53,10 @@ export class EmoManage {
                 },
             });
 
-            console.log("registro do dia realizado com sucesso")
+            console.log("registro do dia realizado com sucesso!");
         } else {
             console.log("Essa emoção não existe em nosso sistema, certifique-se de que a escrita está correta!");
-        }
+        };
     }
 }
 
-
-const user1 = new User("kati", "souza", 21, "20/06/2002")
-const teste = new EmoManage(user1)
-
-teste.registerEmotion("amor")
-teste.registerEmotion("ternura")
-console.log(teste.card)
