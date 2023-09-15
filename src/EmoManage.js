@@ -3,7 +3,7 @@ import { availableEmotions } from "./constants/availableEmotions.js";
 import { emotions } from "./constants/emotions.js";
 
 export class EmoManage {
-    couter = 1;
+    counter = 1;
 
     constructor(user) {
         this.user = this.#checkUser(user);
@@ -28,10 +28,12 @@ export class EmoManage {
         const validEmotion = emotions[emotion];
 
         if (validEmotion) {
-            console.log({
+            const result = {
                 Emoção: emotion,
                 Descrição: validEmotion,
-            });
+            };
+            console.log(result);
+            return result;
         } else {
             console.log("Essa emoção não existe em nosso sistema, certifique-se de que a escrita está correta!");
         };
@@ -44,7 +46,7 @@ export class EmoManage {
         if (emotionExists) {
             this.card.push({
                 register: {
-                    day: this.couter++,
+                    day: this.counter++,
                     date: newDate.toLocaleString('pt-BR', { timezone: 'UTC' }),
                     emotion: emotion,
                     situation: situation,

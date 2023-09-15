@@ -58,7 +58,7 @@ export const emotions = {
 
     tédio: "Mistura de aborrecimento e cansaço que surge quando não estamos fazendo nada ou quando o que fazemos não nos satisfaz, o tempo parece demorar para passar e conseguimos burlá-la quando algo nos desperta expectativa.",
 
-    expectativa: "Esperança de que algo aconteça, podemos curtir as coisas com mais energia e ela desperta o entusiamo.",
+    expectativa: "Esperança de que algo aconteça, podemos curtir as coisas com mais energia e ela desperta o entusiasmo.",
 
     entusiasmo: "Nos impulsiona a fazer algo com imenso prazer, ela nasce do seu interior e o impele a reagir e então chegamos à euforia.",
 
