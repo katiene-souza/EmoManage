@@ -10,7 +10,7 @@
   ![Jest](https://img.shields.io/badge/-Jest-0D1117?style=for-the-badge&logo=jest&labelColor=0D1117)&nbsp;
 #
 
-O EmoManage é um gerenciador de emoções diárias. Ele oferece funcionalidades para cadastrar, checar e descrever emoções disponíveis. Essa documentação descreve o uso básico da classe e suas funcionalidades.
+O EmoManage é um gerenciador de emoções diárias para pessoas que fazem parte do espectro autista. Ele oferece funcionalidades para cadastrar, checar e descrever emoções disponíveis. Essa documentação descreve o uso básico da classe e suas funcionalidades.
  
 ### Criando um usuário
 Antes de começar a registrar emoções, você precisa criar um usuário usando a classe User:
