@@ -13,7 +13,7 @@
 O EmoManage é um gerenciador de emoções diárias. Ele oferece funcionalidades para cadastrar, checar e descrever emoções disponíveis. Essa documentação descreve o uso básico da classe e suas funcionalidades.
  
 ### Criando um usuário
-Antes de começar a registrar emoções, você precisa criar um usuário usando a classe User. 
+Antes de começar a registrar emoções, você precisa criar um usuário usando a classe User:
 #### main.js 
 ```javascript
 import { EmoManage } from "./EmoManage.js"
@@ -54,7 +54,7 @@ console.log(danielRegistration.card);
 ```
 
 ###  Descrevendo Emoções Disponíveis
-Você pode obter informações sobre as emoções disponíveis usando o método descriptionEmotions
+Você pode obter informações sobre as emoções disponíveis usando o método descriptionEmotions:
 ```javascript
 danielRegistration.checkEmotions(); //Segue todas as emoções disponíveis para cadastro: ['ternura', 'amor', 'ódio', ...]
 danielRegistration.descriptionEmotions("insegurança"); 
@@ -137,7 +137,7 @@ export class EmoManage {
 
 ## Constante
 
-A principal constante do projeto "emotions" é um objeto que contém diversas emoções e suas respectivas descrições. Ela é usada no projeto EmoManage para permitir aos usuários registrar e descrever suas emoções diárias. Abaixo está uma descrição resumida das principais emoções presentes nesta constante:
+A principal constante do projeto "emotions" é um objeto que contém diversas emoções e suas respectivas descrições. Ela é usada no projeto EmoManage para permitir aos usuários registrar e descrever suas emoções diárias. Abaixo está uma descrição resumida das principais emoções presentes nesta constante.
 
 #### emotions.js
 ```Javascript
