@@ -16,12 +16,10 @@ O EmoManage é um gerenciador de emoções diárias para pessoas que fazem parte
 Antes de começar a registrar emoções, você precisa criar um usuário usando a classe User:
 #### main.js 
 ```javascript
-import { EmoManage } from "./EmoManage.js"
 import { User } from "./User.js"
 
 
 const daniel = new User("Daniel", "Santos", 21, "20/06/2002");
-const danielRegistration = new EmoManage(daniel); //cadastro realizado com sucesso!
 ```
 
 ###  Inicializando o EmoManage
