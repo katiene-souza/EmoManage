@@ -10,6 +10,14 @@
   ![Jest](https://img.shields.io/badge/-Jest-0D1117?style=for-the-badge&logo=jest&labelColor=0D1117)&nbsp;
 #
 
+#### Objetivo 3.
+### Saúde e Bem Estar
+ <div align="left">
+     <img width="tamanho da imagem" src="https://github.com/katiene-souza/EmoManage/assets/85809975/f431f628-422b-4629-bdc8-1c8ff448e7c9" height="150"/>
+</div> 
+
+#
+
 O EmoManage é um gerenciador de emoções diárias para pessoas que fazem parte do espectro autista. Ele oferece funcionalidades para cadastrar, checar e descrever emoções disponíveis. Essa documentação descreve o uso básico da classe e suas funcionalidades.
  
 ### Criando um usuário
