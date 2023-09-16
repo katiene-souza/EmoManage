@@ -154,4 +154,6 @@ export const emotions = {
     ...
 }
 ```
+## Ideias Futuras
+A partir dessa ideia, pretendo fazer uma aplicação mais robusta, com criação das tela no figma, o front em React e o back em NestJS.
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=957af1&height=120&section=footer"/>
