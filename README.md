@@ -18,7 +18,7 @@
 
 #
 
-O EmoManage é um gerenciador de emoções diárias para pessoas que fazem parte do espectro autista. Ele oferece funcionalidades para cadastrar, checar e descrever emoções disponíveis.
+O EmoManage é um gerenciador de emoções diárias para pessoas que fazem parte do espectro autista, pois temos dificuldades em  identificar nossas próprias emoções. Ele oferece funcionalidades para cadastrar, checar e descrever emoções disponíveis.
  
 ### Criando um usuário
 Antes de começar a registrar emoções, você precisa criar um usuário usando a classe User:
