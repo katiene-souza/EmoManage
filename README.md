@@ -37,7 +37,7 @@ const danielRegistration = new EmoManage(daniel); //cadastro realizado com suces
 ```
 ## Principais funcionalidades
 
-### Registrando Emoções
+### Registrando Emoções diárias
 Você pode registrar emoções usando o método registerEmotion da seguinte maneira:
 ```javascript
 danielRegistration.registerEmotion(
@@ -60,7 +60,7 @@ console.log(danielRegistration.card);
     } */
 ```
 
-###  Descrevendo Emoções Disponíveis
+###  Descrevendo Emoções Disponíveis no Sistema
 Você pode obter informações sobre as emoções disponíveis usando o método descriptionEmotions:
 ```javascript
 danielRegistration.checkEmotions(); //Segue todas as emoções disponíveis para cadastro: ['ternura', 'amor', 'ódio', ...]
