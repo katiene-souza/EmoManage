@@ -18,7 +18,7 @@
 
 #
 
-O EmoManage é um gerenciador de emoções diárias para pessoas que fazem parte do espectro autista. Ele oferece funcionalidades para cadastrar, checar e descrever emoções disponíveis. Essa documentação descreve o uso básico da classe e suas funcionalidades.
+O EmoManage é um gerenciador de emoções diárias para pessoas que fazem parte do espectro autista. Ele oferece funcionalidades para cadastrar, checar e descrever emoções disponíveis.
  
 ### Criando um usuário
 Antes de começar a registrar emoções, você precisa criar um usuário usando a classe User:
@@ -35,6 +35,7 @@ Crie uma instância do EmoManage passando o usuário criado como parâmetro:
 ```javascript
 const danielRegistration = new EmoManage(daniel); //cadastro realizado com sucesso!
 ```
+## Principais funcionalidades
 
 ### Registrando Emoções
 Você pode registrar emoções usando o método registerEmotion da seguinte maneira:
@@ -74,7 +75,7 @@ danielRegistration.descriptionEmotions("insegurança");
 ## Classes utilizadas
 
 ### User
-A classe User é uma parte essencial do projeto EmoManage e é usada para representar informações de usuário, como nome, sobrenome, idade e data de nascimento. Esta classe é responsável por criar instâncias de usuário que podem ser associadas ao gerenciamento de emoções.
+A classe User é uma parte essencial do projeto EmoManage e é usada para representar informações de usuário, como nome, sobrenome, idade e data de nascimento, ela cria as instâncias do usuário que serão associadas ao gerenciamento de emoções.
 #### User.js
  ```Javascript
   export class User {
@@ -89,7 +90,7 @@ A classe User é uma parte essencial do projeto EmoManage e é usada para repres
  ```
 
 ### EmoManage 
-A classe EmoManage é o núcleo do projeto e permite aos usuários registrar e gerenciar suas emoções diárias. Suas principais funcionalidades são cadastrar emoções e descrevê-las. Esta classe torna possível acompanhar e refletir sobre as experiências emocionais ao longo do tempo.
+A classe EmoManage é o núcleo do projeto e permite aos usuários registrar e gerenciar suas emoções diárias e ela torna possível acompanhar e refletir sobre as experiências emocionais ao longo do tempo.
 #### EmoManage.js
 ```Javascript
 import { User } from "./User.js";
@@ -143,7 +144,7 @@ export class EmoManage {
 
 ## Constante
 
-A principal constante do projeto "emotions" é um objeto que contém diversas emoções e suas respectivas descrições. Ela é usada no projeto EmoManage para permitir aos usuários registrar e descrever suas emoções diárias. Abaixo está uma descrição resumida das principais emoções presentes nesta constante.
+A principal constante do projeto é a "emotions" que é um objeto que contém diversas emoções e suas respectivas descrições, que é usada para ajudar o usuário a enteder o que está sentindo. Abaixo está uma descrição resumida das principais emoções presentes nesta constante.
 
 #### emotions.js
 ```Javascript
