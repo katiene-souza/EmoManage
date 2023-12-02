@@ -4,6 +4,7 @@ import { emotions } from "./constants/emotions.js";
 
 export class EmoManage {
     counter = 1;
+    emotions = [];
 
     constructor(user) {
         this.user = this.#checkUser(user);
@@ -26,13 +27,13 @@ export class EmoManage {
 
     descriptionEmotions(emotion) {
         const validEmotion = emotions[emotion];
+        
 
         if (validEmotion) {
             const result = {
                 Emoção: emotion,
                 Descrição: validEmotion,
             };
-            console.log(result);
             return result;
         } else {
             console.log("Essa emoção não existe em nosso sistema, certifique-se de que a escrita está correta!");
@@ -40,8 +41,11 @@ export class EmoManage {
     }
 
     registerEmotion(emotion, situation, reflection, attitude) {
+
         const emotionExists = availableEmotions.includes(emotion),
             newDate = new Date();
+
+        this.emotions.push(emotion);
 
         if (emotionExists) {
             this.card.push({
@@ -59,6 +63,20 @@ export class EmoManage {
         } else {
             console.log("Essa emoção não existe em nosso sistema, certifique-se de que a escrita está correta!");
         };
+    }
+
+    get checkRecords() {
+        console.log("Segue todos os seus registros:")
+        return this.card;
+    }
+
+    get progressDiary() {
+        const diary = {
+            QuantidadeDeRegistros: this.card.length,
+            EmoçõesSentidas: this.emotions,
+        };
+
+        return diary;
     }
 }
 

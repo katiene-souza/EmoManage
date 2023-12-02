@@ -2,11 +2,11 @@ import { EmoManage } from "./EmoManage.js"
 import { User } from "./User.js"
 
 
-const daniel = new User("Daniel", "Santos", 21, "20/06/2002");
+const daniel = new User("Daniel", "Santos", 21, "20/06/2002", "nível 2");
 const danielRegistration = new EmoManage(daniel); //cadastro realizado com sucesso!
 
-danielRegistration.checkEmotions(); //Segue todas as emoções disponíveis para cadastro: ['ternura', 'amor', 'ódio', ...]
-danielRegistration.descriptionEmotions("insegurança"); 
+/* danielRegistration.checkEmotions(); //Segue todas as emoções disponíveis para cadastro: ['ternura', 'amor', 'ódio', ...]
+danielRegistration.descriptionEmotions("insegurança");  */
 /* {
     'Emoção': 'insegurança', 
     'Descrição': 'a insegurança é falta de confiaça em nós ou nos outros, quando nos sentimos inseguros, 
@@ -16,8 +16,10 @@ danielRegistration.descriptionEmotions("insegurança");
 danielRegistration.registerEmotion("insegurança", "me sinto inseguro para tirar fotos.", "conclui resolver meus problemas de auto-imagem.", 
 "pedi ajuda para meus amigos me ajudar a tirar fotos e selecionar uma."
 );
+danielRegistration.registerEmotion("medo", "me sinto inseguro para tirar fotos.", "conclui resolver meus problemas de auto-imagem.", 
+"pedi ajuda para meus amigos me ajudar a tirar fotos e selecionar uma."
+);
 
-console.log(danielRegistration.card);
 /*  {
     register: {
         day: 1,
@@ -28,3 +30,5 @@ console.log(danielRegistration.card);
         attitude: 'pedi ajuda para meus amigos me ajudar a tirar fotos e selecionar uma.'
       }
     } */
+
+console.log(danielRegistration.progressDiary)
