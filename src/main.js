@@ -31,4 +31,4 @@ danielRegistration.registerEmotion("medo", "me sinto inseguro para tirar fotos."
       }
     } */
 
-console.log(danielRegistration.progressDiary)
+console.log(danielRegistration.deleteRegister(1))

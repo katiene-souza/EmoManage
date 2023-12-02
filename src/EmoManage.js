@@ -13,7 +13,7 @@ export class EmoManage {
 
     #checkUser(user) {
         if (user instanceof User) {
-            console.log("cadastro realizado com sucesso!");
+            console.log("Cadastro realizado com sucesso!");
         } else {
             console.log("Informe um usuário válido!");
         }
@@ -59,14 +59,32 @@ export class EmoManage {
                 },
             });
 
-            console.log("registro do dia realizado com sucesso!");
+            console.log("Registro do dia realizado com sucesso!");
         } else {
             console.log("Essa emoção não existe em nosso sistema, certifique-se de que a escrita está correta!");
         };
     }
 
+    deleteRegister(day) {
+        const registers = this.card.length;
+
+        if(day < 1) {
+            return "Você precisa colocar um número maior que 0 para conseguir deletar!";
+        } else if (day > registers) {
+            console.log("Você precisa colocar um número menor que a quantidade de registros para conseguir deletar!");
+            return `Número de registros: ${registers}`;
+        } else {
+            const removeRegister = day - 1;
+            this.card.splice(removeRegister, 1);
+
+            console.log("Removido com sucesso!");
+
+            return this.card;
+        };
+    }
+
     get checkRecords() {
-        console.log("Segue todos os seus registros:")
+        console.log("Segue todos os seus registros:");
         return this.card;
     }
 
